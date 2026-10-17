@@ -6,17 +6,17 @@
 <title>Hidrasan | Fontanería e instalaciones hidráulicas en Alquerías, Murcia</title>
 <meta name="description" content="Fontanería doméstica, residencial e industrial, energía solar, calefacción, tratamientos de agua y gas en Alquerías (Murcia). Llama al 658 768 665.">
 <meta name="theme-color" content="#0E2347">
-<link rel="icon" type="image/png" href="fotos/favicon.png">
-<link rel="apple-touch-icon" href="fotos/favicon.png">
-<link rel="preload" href="fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
-<!-- TODO: cambiar TU-DOMINIO por la dirección final (por ejemplo usuario.github.io/hidrasan) -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="canonical" href="https://nexorachat.github.io/Hidrasan/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hidrasan | Fontanería en Alquerías, Murcia">
 <meta property="og:description" content="Fontanería, energía solar, calefacción, tratamientos de agua y gas. Llama al 658 768 665.">
-<meta property="og:image" content="https://TU-DOMINIO/fotos/logo-hidrasan-circulo.png">
+<meta property="og:image" content="https://nexorachat.github.io/Hidrasan/logo-hidrasan-circulo.png">
+<meta property="og:url" content="https://nexorachat.github.io/Hidrasan/">
 <meta property="og:locale" content="es_ES">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Plumber","name":"Hidrasan","description":"Fontanería doméstica, residencial e industrial, energía solar, calefacción, tratamientos de agua y gas.","telephone":"+34658768665","email":"hidrasan@hotmail.com","image":"fotos/logo-hidrasan-circulo.png","sameAs":["https://www.facebook.com/Hidrasan"],"areaServed":"Murcia","address":{"@type":"PostalAddress","streetAddress":"Carril Viñas, 36, Bajo","postalCode":"30580","addressLocality":"Alquerías","addressRegion":"Murcia","addressCountry":"ES"}}
+{"@context":"https://schema.org","@type":"Plumber","name":"Hidrasan","description":"Fontanería doméstica, residencial e industrial, energía solar, calefacción, tratamientos de agua y gas.","telephone":"+34658768665","email":"hidrasan@hotmail.com","url":"https://nexorachat.github.io/Hidrasan/","image":"https://nexorachat.github.io/Hidrasan/logo-hidrasan-circulo.png","sameAs":["https://www.facebook.com/Hidrasan"],"areaServed":"Murcia","address":{"@type":"PostalAddress","streetAddress":"Carril Viñas, 36, Bajo","postalCode":"30580","addressLocality":"Alquerías","addressRegion":"Murcia","addressCountry":"ES"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -27,14 +27,14 @@
 {"@type":"Question","name":"¿Dónde estáis?","acceptedAnswer":{"@type":"Answer","text":"En Carril Viñas, 36, Bajo, 30580 Alquerías, Murcia."}}]}
 </script>
 <style>
-@font-face{font-family:'Poppins';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/poppins-bold.woff') format('woff')}
 :root{--navy:#0E2347;--blue:#234379;--soft:#EAF0F9;--sky:#9CC0F0;--red:#C8262C;--red-d:#A51D22;--green:#1C8A4A;--text:#1C2B3F;--muted:#4B5D75;--line:#D5DFEC;
---head:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--body:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+--head:'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',Arial,sans-serif;--body:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font-family:var(--body);color:var(--text);background:#fff;line-height:1.65;font-size:1.0625rem}
-h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.15;color:var(--navy)}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.15;letter-spacing:-.01em;color:var(--navy)}
 a{color:inherit}img{max-width:100%;display:block}
+[hidden]{display:none!important}
 :focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
 .skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--navy);padding:.6rem 1rem;z-index:100}
@@ -110,7 +110,7 @@ header nav a.tel:hover{background:var(--red-d);color:#fff}
 
 /* Trabajos */
 .works{background:var(--soft)}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.gallery{grid-auto-flow:dense;display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
 .gallery figure{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:5/4;background:linear-gradient(150deg,var(--navy),var(--blue))}
 .gallery figure.wide{grid-column:span 2}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
@@ -134,6 +134,7 @@ header nav a.tel:hover{background:var(--red-d);color:#fff}
 .about img{width:100%;height:auto;border-radius:14px;box-shadow:0 14px 34px rgba(14,35,71,.2)}
 .pillars{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
 .pillars span{background:#fff;color:var(--blue);font-weight:600;padding:.4rem .9rem;border-radius:999px;font-size:.95rem;border:1px solid var(--line)}
+.about .grid.solo{grid-template-columns:1fr}
 @media(max-width:860px){.about .grid,.quote-form .grid,.contact .grid{grid-template-columns:1fr}}
 
 /* Opiniones */
@@ -207,12 +208,12 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#" aria-label="Hidrasan, inicio">
-      <img src="fotos/logo-circulo-160.png" alt="Logo de Hidrasan, instalaciones hidráulicas" width="50" height="50">
+      <img src="logo-circulo-160.png" alt="Logo de Hidrasan, instalaciones hidráulicas" width="50" height="50">
       <span>Hidrasan</span>
     </a>
     <nav aria-label="Principal">
       <a class="link" href="#servicios">Servicios</a>
-      <a class="link" href="#trabajos">Trabajos</a>
+      <a class="link" href="#trabajos" hidden>Trabajos</a>
       <a class="link" href="#opiniones">Opiniones</a>
       <a class="link" href="#presupuesto">Presupuesto</a>
       <a class="link" href="#contacto">Contacto</a>
@@ -235,7 +236,7 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
         </div>
       </div>
       <div class="hero-media">
-        <img src="fotos/furgoneta.jpg" alt="Furgoneta de Hidrasan, instalaciones hidráulicas, teléfono 658 768 665" width="1094" height="400" onerror="this.onerror=null;this.src='fotos/logo-hidrasan-circulo.png';this.className='is-logo';this.width=340;this.height=340">
+        <img id="hero-img" class="is-logo" src="logo-hidrasan-circulo.png" data-src="furgoneta.jpg" alt="Hidrasan, instalaciones hidráulicas, teléfono 658 768 665" width="340" height="340">
       </div>
     </div>
   </div>
@@ -277,18 +278,18 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
     </div>
   </div>
 
-  <section class="works" id="trabajos">
+  <section class="works" id="trabajos" hidden>
     <div class="wrap">
       <h2>Lo que hacemos</h2>
       <p class="sub">Algunos de nuestros trabajos y servicios.</p>
       <div class="gallery">
-        <figure class="wide"><img src="fotos/trabajos/imprevistos.jpg" alt="Técnico reparando una tubería bajo un fregadero" loading="lazy" onerror="this.remove()"><figcaption>Servicio rápido y eficaz ante cualquier imprevisto</figcaption></figure>
-        <figure><img src="fotos/trabajos/aire-acondicionado.jpg" alt="Instalación de aire acondicionado" loading="lazy" onerror="this.remove()"><figcaption>Instalación de aire acondicionado en tu domicilio</figcaption></figure>
-        <figure><img src="fotos/trabajos/solar.jpg" alt="Paneles de energía solar" loading="lazy" onerror="this.remove()"><figcaption>Energía solar</figcaption></figure>
-        <figure><img src="fotos/trabajos/piscina.jpg" alt="Técnico revisando la maquinaria de una instalación" loading="lazy" onerror="this.remove()"><figcaption>Puesta a punto de la maquinaria de tu piscina</figcaption></figure>
-        <figure><img src="fotos/trabajos/fontaneria-bano.jpg" alt="Técnico trabajando en un mueble de baño" loading="lazy" onerror="this.remove()"><figcaption>Fontanería en tu hogar</figcaption></figure>
-        <figure><img src="fotos/trabajos/agua-presion.jpg" alt="Manómetro y tuberías de una instalación de agua" loading="lazy" onerror="this.remove()"><figcaption>Tratamientos de agua</figcaption></figure>
-        <figure><img src="fotos/trabajos/calefaccion.jpg" alt="Técnico trabajando en una instalación de agua caliente" loading="lazy" onerror="this.remove()"><figcaption>Calefacción y agua caliente</figcaption></figure>
+        <figure class="wide" hidden><img data-src="imprevistos.jpg" alt="Técnico reparando una tubería bajo un fregadero"><figcaption>Servicio rápido y eficaz ante cualquier imprevisto</figcaption></figure>
+        <figure hidden><img data-src="aire-acondicionado.jpg" alt="Instalación de aire acondicionado"><figcaption>Instalación de aire acondicionado en tu domicilio</figcaption></figure>
+        <figure hidden><img data-src="solar.jpg" alt="Paneles de energía solar"><figcaption>Energía solar</figcaption></figure>
+        <figure hidden><img data-src="piscina.jpg" alt="Técnico revisando la maquinaria de una instalación"><figcaption>Puesta a punto de la maquinaria de tu piscina</figcaption></figure>
+        <figure hidden><img data-src="fontaneria-bano.jpg" alt="Técnico trabajando en un mueble de baño"><figcaption>Fontanería en tu hogar</figcaption></figure>
+        <figure hidden><img data-src="agua-presion.jpg" alt="Manómetro y tuberías de una instalación de agua"><figcaption>Tratamientos de agua</figcaption></figure>
+        <figure hidden><img data-src="calefaccion.jpg" alt="Técnico trabajando en una instalación de agua caliente"><figcaption>Calefacción y agua caliente</figcaption></figure>
       </div>
     </div>
   </section>
@@ -306,14 +307,14 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
   </section>
 
   <section class="about" id="empresa">
-    <div class="wrap grid">
+    <div class="wrap grid solo" id="about-grid">
       <div>
         <h2>Quiénes somos</h2>
         <p>Somos una empresa dedicada a la fontanería doméstica, residencial e industrial, con sede en Alquerías (Murcia).</p>
         <p>También tenemos experiencia en energía solar, calefacción, tratamientos de agua y gas. Si surge un imprevisto, te atendemos con un servicio rápido.</p>
         <div class="pillars" aria-label="Tipos de instalación"><span>Doméstica</span><span>Residencial</span><span>Industrial</span></div>
       </div>
-      <img src="fotos/portada.jpg" alt="Técnico de Hidrasan reparando un calentador" width="1130" height="750" loading="lazy" onerror="this.remove()">
+      <img hidden data-src="portada.jpg" alt="Técnico de Hidrasan reparando un calentador" width="1130" height="750">
     </div>
   </section>
 
@@ -397,11 +398,11 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
 <footer>
   <div class="wrap foot">
     <div class="foot-brand">
-      <img src="fotos/logo-circulo-160.png" alt="" width="64" height="64">
+      <img src="logo-circulo-160.png" alt="" width="64" height="64">
       <p>Fontanería e instalaciones hidráulicas en Alquerías, Murcia.</p>
     </div>
     <nav aria-label="Enlaces del pie">
-      <a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#preguntas">Preguntas</a><a href="#presupuesto">Presupuesto</a>
+      <a href="#servicios">Servicios</a><a href="#trabajos" hidden>Trabajos</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#preguntas">Preguntas</a><a href="#presupuesto">Presupuesto</a>
     </nav>
     <div>
       <a href="tel:+34658768665">658 768 665</a><br>
@@ -425,6 +426,18 @@ body{padding-bottom:62px}section{padding:3.5rem 0}}
 (function(){
   var NUM='34658768665';
   document.getElementById('anio').textContent=new Date().getFullYear();
+
+  function cargar(img,ok){var p=new Image();p.onload=function(){img.src=p.src;ok(img);};p.src=img.getAttribute('data-src');}
+  cargar(document.getElementById('hero-img'),function(i){i.className='';i.width=1094;i.height=400;});
+  var ab=document.querySelector('.about img[data-src]');
+  cargar(ab,function(i){i.hidden=false;document.getElementById('about-grid').classList.remove('solo');});
+  var sec=document.getElementById('trabajos'),hay=false;
+  document.querySelectorAll('#trabajos img[data-src]').forEach(function(im){
+    cargar(im,function(){
+      im.parentNode.hidden=false;
+      if(!hay){hay=true;sec.hidden=false;document.querySelectorAll('a[href="#trabajos"]').forEach(function(a){a.hidden=false;});}
+    });
+  });
 
   var f=document.getElementById('form-presupuesto');
   f.addEventListener('submit',function(e){
